@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.mooncode.lorenzoskitchen.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register_start" />
+        <action
+            android:id="@+id/action_login_to_mainContainer"
+            app:destination="@id/mainContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_start"
+        android:name="com.mooncode.lorenzoskitchen.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_mainContainer"
+            app:destination="@id/mainContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainContainer"
+        android:name="com.mooncode.lorenzoskitchen.MainContainer"
+        android:label="fragment_main_container"
+        tools:layout="@layout/fragment_main_container" />
+    <fragment
+        android:id="@+id/blank2"
+        android:name="com.mooncode.lorenzoskitchen.Blank"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+</navigation>

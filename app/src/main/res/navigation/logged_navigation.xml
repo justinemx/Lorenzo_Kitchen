@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/blank">
+    <fragment
+        android:id="@+id/manageMenu"
+        android:name="com.mooncode.lorenzoskitchen.ManageMenu"
+        android:label="fragment_manage_menu"
+        tools:layout="@layout/fragment_manage_menu" />
+    <fragment
+        android:id="@+id/manageUser"
+        android:name="com.mooncode.lorenzoskitchen.ManageUser"
+        android:label="fragment_manage_user"
+        tools:layout="@layout/fragment_manage_user" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.mooncode.lorenzoskitchen.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.mooncode.lorenzoskitchen.Cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.mooncode.lorenzoskitchen.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_admin_menu" />
+    <include app:graph="@navigation/start_navigation" />
+    <fragment
+        android:id="@+id/register_add"
+        android:name="com.mooncode.lorenzoskitchen.Register"
+        android:label="fragment_register_add"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/updateUser"
+        android:name="com.mooncode.lorenzoskitchen.UpdateUser"
+        android:label="fragment_update_user"
+        tools:layout="@layout/fragment_update_user"/>
+    <fragment
+        android:id="@+id/add_menu"
+        android:name="com.mooncode.lorenzoskitchen.AddMenu"
+        android:label="fragment_add_menu"
+        tools:layout="@layout/fragment_add_menu" />
+    <fragment
+        android:id="@+id/blank"
+        android:name="com.mooncode.lorenzoskitchen.Blank"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+</navigation>
